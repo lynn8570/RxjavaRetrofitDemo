@@ -1,9 +1,11 @@
 package webapp.demo.lynn.rxrestrofitdemo;
 
+
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
+import rx.Observable;
 import webapp.demo.lynn.rxrestrofitdemo.mode.Book;
 
 /**
@@ -13,10 +15,10 @@ import webapp.demo.lynn.rxrestrofitdemo.mode.Book;
 public interface RetrofitService {
 
     @GET("book/search")
-    Call<Book> getSearchBook(@Query("q")String name,
-                             @Query("tag")String tag,
-                             @Query("start")int start,
-                             @Query("count")int count);
+    Observable<Book> getSearchBook(@Query("q")String name,
+                                   @Query("tag")String tag,
+                                   @Query("start")int start,
+                                   @Query("count")int count);
 
     @GET("group/{id}/users")
     Call<Book> groupList(@Path("id") int groupId);
