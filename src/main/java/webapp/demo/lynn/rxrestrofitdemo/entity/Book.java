@@ -1,4 +1,4 @@
-package webapp.demo.lynn.rxrestrofitdemo.mode;
+package webapp.demo.lynn.rxrestrofitdemo.entity;
 
 import java.util.List;
 

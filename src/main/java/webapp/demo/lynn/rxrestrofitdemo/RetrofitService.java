@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 import rx.Observable;
-import webapp.demo.lynn.rxrestrofitdemo.mode.Book;
+import webapp.demo.lynn.rxrestrofitdemo.entity.Book;
 
 /**
  * Created by lynn on 2018/1/18.
