@@ -10,6 +10,10 @@ import webapp.demo.lynn.rxrestrofitdemo.entity.Book;
 
 /**
  * Created by lynn on 2018/1/18.
+ * 管理RetrofitService
+ * 提供给p层调用
+ *
+ * 会有
  */
 
 public class DataManager {

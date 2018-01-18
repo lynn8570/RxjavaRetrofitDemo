@@ -14,6 +14,14 @@ import webapp.demo.lynn.rxrestrofitdemo.view.View;
 
 /**
  * Created by lynn on 2018/1/18.
+ * p 的出现，是为了解决activity太过臃肿的问题，
+ * view 通过 p 来读取 m中的东西。
+ *
+ * activity 通过 BookPresenter 访问数据，数据通过
+ * BookView在回掉中返回数据。
+ * 在bookview的回调中实现界面的更新
+ *
+ *
  */
 
 public class BookPresenter implements Presenter {
